@@ -1,0 +1,144 @@
+body{background-color: #f2ebe6;}
+.inner{width: 1440px; margin: 0 auto;}
+a{color: black; text-decoration: none;}
+.blind{visibility: hidden;}
+.red{color: #f00;}
+.Top{position:fixed;right: 16%;top:50%; z-index: 2;}
+
+/* header 시작 */
+header{width: 100%; height: 120px; position: fixed; 
+      background-color: #fff; z-index: 3;}
+.on{height: 440px;}
+h1{float: left; padding: 20px 0 0 393px;}
+
+.menu:first-child{margin-left: 104px;}
+.menu{height: 120px; line-height: 120px; float: left;
+      padding-right: 80px;  font-size: 22px; font-weight: 900;
+      cursor:default; position: relative;}
+.menu:last-child a{margin-top: 35px; display: block; width: 166px;
+                  height: 50px; line-height: 50px; background-color: #f00;
+                  border-radius: 25px; font-size: 20px; color: #fff; text-align: center;}
+.menu span::after{content: ""; display: inline-block;
+                  background: url(../images/arrow_drop_down_FILL0_wght400_GRAD0_opsz48.png);
+                  width: 13px; height: 19px; background-size: cover; margin-left: 7px;}
+
+/* 메뉴 하위 목록 */
+.drop{display: block; position: absolute;top: 100px;left: 0;}
+.drop li{display: none;}
+.drop a{display: block; height: 40px; line-height: 40px; font-size: 14px;}
+
+/* main 시작 */
+main{font-size: 0;}
+.banner{position: relative;}
+.banner img{width: 1440px; height: 480px; padding-top: 120px;}
+.slick-prev,.slick-next{color: transparent; border: 0; outline: 0; width: 30px; height: 40px; z-index: 2;}
+.slick-prev{background: url(../images/다운로드\ \(2\).png); position: absolute;top:60.5%;left:1.1%; transform: translateY(-60.5%);}
+.slick-next{background: url(../images/다운로드\ \(3\).png); position: absolute;top:60.5%;left:96.9%; transform: translateY(-60.5%);}
+#slick-slide-control00,
+#slick-slide-control01,
+#slick-slide-control02,
+#slick-slide-control03,
+#slick-slide-control04{width: 0; height: 12px; border: 0; color:transparent; border-radius: 50%;}
+#slick-slide-control00{position: absolute;top: 95%;left: 48%;}
+#slick-slide-control01{position: absolute;top: 95%;left: 49.5%;}
+#slick-slide-control02{position: absolute;top: 95%;left: 51%;}
+#slick-slide-control03{position: absolute;top: 95%;left: 52.5%;}
+#slick-slide-control04{position: absolute;top: 95%;left: 54%;}
+
+.slick-active button{background-color: #f00;}
+
+.SNS{width: 1440px; height: 160px; background-color: #683a2f; font-size: 20px;
+font-weight: 900;}
+.SNS a{color: #fff;}
+.SNS ul{display: flex; justify-content: space-evenly;}
+.SNS ul li{position: relative; margin: 20px 58px 0 0;}
+.SNS ul li a b{display: block; position: absolute;top:10%;left: 110%;}
+.SNS ul li a span{position: absolute;top: 40%;left: 110%; width: 99px; text-align: center;
+      font-size: 12px; color: #2b0200; background-color: #fff; border-radius: 4px; padding: 4px 9px;}
+.SNS ul li:first-child a span::before,
+.SNS ul li:nth-child(2) a span:before,
+.SNS ul li:last-child a span::before{content: ""; display: inline-block; margin-bottom: 4px;
+      vertical-align: middle; margin-right: 5px;}
+.SNS ul li:first-child a span::before{background: url(../images/다운로드\ \(5\).png);
+                                    width: 18px; height: 12px;}
+.SNS ul li:nth-child(2) a span:before{background: url(../images/다운로드\ \(7\).png);
+                                    width: 17px; height: 17px}
+.SNS ul li:last-child a span::before{background: url(../images/다운로드\ \(8\).png);
+                                    width: 15px; height: 15px;}
+
+.use{width: 1440px; height: 480px;}
+.use li:first-child,
+.use li:first-child a,
+.use li:nth-child(2),
+.use li:nth-child(2) a{width: 720px; height: 480px; display: inline-block;}
+.use li:first-child{background-color: #c7a186;}
+.use li:first-child a{background: url(../images/bg_home_guide_app.7be296de.png);}
+.use li:nth-child(2){background-color: #b08972;}
+.use li:nth-child(2) a{background: url(../images/bg_home_guide_delivery.ee6ff497.png);}
+
+.shop{width: 1440px; height: 600px; background-color: #fff; text-align: center;}
+.shop h2{font-size: 40px; font-weight: 900; padding: 100px 0 23px;}
+.shop h2+p{font-size: 24px; font-weight: 500; padding-bottom: 39px;}
+.shop h2+p+p a{width: 140px; height: 50px; line-height: 50px; display: block;
+            background-color: #d72300; color: #fff; border-radius: 25px;
+            font-size: 24px; font-weight: 900; margin: 0 650px;}
+
+.shop ul{display: flex; justify-content: space-evenly;}
+.shop ul li{font-size: 18px; font-weight: 900; margin-top: 55px; position: relative;}
+.shop ul>li p:nth-of-type(2){padding: 8px 0;}
+
+.shop ul li::before,.shop ul li::after{content: ""; display: inline-block;}
+.shop ul li::before{width: 93px; height: 80px;}
+.shop ul li::after{width: 1px; height: 180px; background-color: #ededed;
+                  position: absolute;top:0;right: -40%;}
+.shop ul li:last-of-type::after{content: ""; display: none;}
+
+.shop ul li:first-of-type:before,
+.shop ul li:nth-of-type(2):before,
+.shop ul li:nth-of-type(3):before,
+.shop ul li:nth-of-type(4):before,
+.shop ul li:nth-of-type(5):before,
+.shop ul li:last-of-type:before{content: ""; margin-bottom: 24px;}
+.shop ul li:first-of-type:before{background: url(../images/다운로드.gif); background-size: cover;}
+.shop ul li:nth-of-type(2):before{background: url(../images/다운로드\ \(1\).gif); background-size: cover;}
+.shop ul li:nth-of-type(3):before{background: url(../images/다운로드\ \(2\).gif); background-size: cover;}
+.shop ul li:nth-of-type(4):before{background: url(../images/다운로드\ \(3\).gif); background-size: cover;}
+.shop ul li:nth-of-type(5):before{background: url(../images/다운로드\ \(4\).gif); background-size: cover;}
+.shop ul li:last-of-type:before{background: url(../images/다운로드\ \(5\).gif); background-size: cover;}
+
+.tel{width: 1440px; height: 200px; display: flex; justify-content: space-evenly;
+      align-items: center; color: #fff; background: url(../images/bg_home_cs.40b21d3f.png);}
+.tel h2{font-size: 32px; font-weight: 900;}
+.tel div p{font-size: 20px; padding-top: 22px; font-weight: 600;}
+.tel>p{font-size: 40px; font-weight: 900;}
+.tel>p::before{content: ""; display: inline-block; background: url(../images/다운로드\ \(9\).png);
+            width: 48px; height: 48px; margin-right: 22px;}
+
+/* footer 시작 */
+footer{height: 680px; font-weight: 900; background-color: #2b0200; color: #bba391;}
+footer a{color: #bba391; font-size: 16px; display: block;}
+.middle{width: 1144px; margin: 0 auto;}
+
+.bmenu{height: 385px; display: flex; justify-content: space-between;
+      border-bottom: 1px solid #bba391; margin-bottom: 47px;}
+.bmenu>li{color: #f5ebdc; font-size: 26px; margin-top: 52px;}
+.bmenu a{margin-top: 18px;}
+
+address p:nth-child(2){width: 100%; padding: 12px 0;}
+address span::before{content: ""; display: inline-block; width: 1px; height: 12px;
+                  background-color: #bba391; margin: 0 10px 0;}
+
+footer div p img{padding-bottom: 28px;}
+address{padding-bottom: 26px;}
+footer div p,address,.sns,footer div .sns li,footer div .sns+ul li{float: left;}
+.sns li{padding-right: 6px;}
+footer div .sns+ul{float: right; position: absolute;left: 64.5%;}
+
+.sns+ul li:nth-child(4){clear: both;}
+.sns+ul li:nth-child(4) a,
+.sns+ul li:nth-child(5) a{width: 117px; height: 32px; line-height: 32px;
+                        text-align: center; display: block; border: 1px solid #bba391;
+                        border-radius: 25px; margin: 18px 15px 0 15px; color: #f5ebdc;}
+
+.sns+ul span::before{content: ""; display: inline-block; width: 1px; height: 12px;
+                  background-color: #411c1a; margin: 0 10px 0;}

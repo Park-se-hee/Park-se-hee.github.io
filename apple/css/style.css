@@ -1,0 +1,106 @@
+.inner{width: 980px; margin: 0 auto;}
+a{text-decoration: none; color: #000;}
+ul{list-style: none;}
+.blind{overflow: hidden; position: absolute; width: 0; height: 0;
+    line-height: 0; text-indent: -9999px;}
+
+/* header 시작 */
+header{width: 100%; height: 44px; line-height: 44px;
+    background-color: #313132; display: flex; position: fixed; z-index: 1;}
+header a{color: #f5f5f7;}
+header h1{float: left; width: 16px; margin-right: 46px;}
+header nav ul{display: flex; justify-content: space-between;
+    font-size: 11px;}
+header nav ul li:nth-of-type(11) button{border: 0; background-color: transparent; width: 14px; height: 20px;
+background: url(../images/globalnav_search_image__cbllq1gkias2_large.svg) 0 -57px;
+vertical-align: middle;}
+header nav ul li:last-child button{width: 14px; height: 20px; vertical-align: middle; border: 0; background: url(../images/globalnav_bag_image__yzte50i47ciu_large.svg) 0 -12px no-repeat;}
+
+/* main 시작 */
+section{width: 100%; height: 692px; text-align: center; margin-bottom: 12px;}
+.new{background: url(../images/hero_iphone14pro_preorder__cc1jjc6hq7ma_largetall.jpg) 50% 100%;
+    color: #fff;}
+h2{font-size: 41px; font-weight: 900; padding: 66px 0 25px;}
+section p{font-size: 24px; font-weight: 500;}
+section p:nth-of-type(2){font-size: 20px; color: #6d6d71;
+    padding: 26px 0; font-weight: 500;}
+section a{font-size: 18px; color: #2997ff;}
+section a:hover,footer a:hover{text-decoration: underline;}
+section ul li{display: inline-block; padding: 0 21px;}
+
+.iphone{background: url(../images/hero_iphone14_preorder__c4g2wjzuugqe_largetall.jpg) 50% 100%;}
+.watch{background: url(../images/hero_apple_watch_series_8_order__guu7e4m2jpim_largetall.jpg) 50% 100%;}
+.watch p:first-of-type{color: #fff;}
+
+/* promotion 부분 */
+.promo{height: 1764px; display: flex; flex-wrap: wrap;}
+.promo h2{padding: 60px 0 15px;}
+.promo li{padding: 0 6px 0 6px;}
+.promo li a{font-size: 15px; font-weight: 600;}
+.promo div{width: 939px; height: 580px; margin: 0 0 12px 12px;}
+
+.ultra{background: url(../images/promo_apple_watch_ultra_avail__ddgwll601eie_large.jpg) 50% 100%;}
+.se{background: url(../images/promo_apple_watch_se_avail__e5unstfyokae_large.jpg) 50% 100%;}
+.airpods{background: url(../images/promo_airpods_pro_avail__gaxggskofx6y_large.jpg) 50% 100%;}
+.ipad{background: url(../images/promo_ipadair_avail__ferd4bfpcdm6_large.jpg) 50% 100%;}
+.store{background: url(../images/promo_jamsil__eqekd92guu4i_large.jpg) 50% 100%;}
+.macbook{background: url(../images/promo_mbp13__buwssod6c8vm_large.jpg) 50% 100%;}
+
+.ultra p,.se p,.airpods p{font-size: 18px; font-weight: 500;}
+.ultra p:nth-of-type(2),
+.se p:nth-of-type(2),
+.airpods p:nth-of-type(2){font-size: 15px; font-weight: 500; padding: 17px 0 19px;}
+.airpods h2,.airpods p:nth-of-type(1),.ipad p,.macbook h2{color: #fff;}
+.ipad p{padding-bottom: 20px; font-size: 18px;}
+.store p:first-of-type{padding-top: 10px;}
+.store p:nth-of-type(2){padding-top: 13px;}
+.store p:nth-of-type(2) a{font-size: 15px; font-weight: 600;}
+.macbook p{margin-left: 23px;}
+
+/* banner 부분 */
+.banner{height: 705px;}
+.swiper img{
+    width: 1250px;
+    height: 667px;
+  }
+.slick-slide{margin: 0 10px 0; opacity: 50%;}
+.slick-current{opacity: 100%;}
+button.slick-arrow{color: transparent; width: 0; height: 0; background: transparent; border: 0;}
+
+#slick-slide-control00,
+#slick-slide-control01,
+#slick-slide-control02,
+#slick-slide-control03,
+#slick-slide-control04,
+#slick-slide-control05,
+#slick-slide-control06,
+#slick-slide-control07,
+#slick-slide-control08,
+#slick-slide-control09,
+#slick-slide-control010{color: transparent; border: 0; border-radius: 50%; width: 1px; height: 10px;
+position: absolute;bottom:1.2%;}
+.slick-active button{background: #888;}
+
+/* footer 시작 */
+footer{width: 100%; height: 485px; background-color: #f5f5f7;
+font-size: 11px; margin-top: 50px;}
+footer>div{display: flex;}
+footer>div:first-child>ul{margin-right: 91px;}
+footer>div:nth-child(2){flex-direction: column;}
+footer>div:nth-child(2) p a{color: #06c;}
+
+footer>div>p{margin-top: 39px; padding-bottom: 11px;}
+.info{display: flex; border-top: 1px solid #d2d2d7; padding-top: 11px;}
+footer>div:first-child>ul>li{color: #1d1d1f; font-weight: 900; padding-top: 22px;}
+footer>div:last-child>p{color: #6e6e73;}
+footer li a{color: #626273; font-weight: 500;}
+.bmenu li{margin-top: 15px;}
+
+.info a{color: #424245; font-weight: 600; margin-left: 10px;}
+.info li:first-child{margin-right: 22px; color: #6e6e73;}
+.info li:last-child{margin-left: 239px;}
+.impo::before{content: ""; display: inline-block; width: 1px; height: 16px;
+background-color: #d2d2d7; vertical-align: middle; margin-right: 10px;}
+address{padding-top: 10px; color: #999; font-size: 10px;}
+.adr::before{content: ""; display: inline-block; width: 1px; height: 10px;
+background-color: #a5b2d2; vertical-align: middle; margin: 0 3px;}

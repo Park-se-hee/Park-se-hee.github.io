@@ -1,0 +1,90 @@
+*{margin: 0; padding: 0; font-family: 'Noto Sans KR',sans-serif;}
+.inner{margin: 0 auto; text-align: center; box-sizing: border-box;}
+ul{list-style: none;}
+a{text-decoration: none; color: #000;}
+.fc{font-weight: 300; color: #8c6239;}
+.blind{visibility: hidden;}
+
+/* header */
+
+/* 로고 부분 */
+header{width: 100%; height: 119px; background-color: #fff;
+  position: fixed; z-index: 2;}
+.center{width: 1373px; height: 119px; margin: 0 auto;}
+h1,.sns li,.menu li{float: left;}
+.sns,.menu{float:right;}
+h1{padding: 19px 0 0 131px;}
+h1 img{width: 145px; height: 79px;}
+
+/* sns, 로그인, 회원가입 부분 */
+.sns{height: 24px; line-height: 24px; padding: 8px 158px 0 0;}
+.sns img:nth-of-type(1),
+.sns img:nth-of-type(2),
+.sns img:nth-of-type(3),
+.sns img:nth-of-type(4){width: 24px; height: 24px; display: block;}
+.sns img:hover{transform: scale(1.1,1.1);}
+.sns li{padding-right: 14px;}
+.sns li a{color: #8c6239; font-size: 13px;}
+
+.login{padding-left: 4px;}
+.login:hover,.signup:hover{color: red;}
+.signup{padding-left: 1px;}
+.login::after{content: ""; display: inline-block; width: 1px;
+height: 10px; background-color: #8c6239; margin-left: 15px;}
+
+/* 주메뉴 부분 */
+.menu{padding: 28px 122px 0 0;}
+.menu li{font-size: 19px; font-weight: 600; padding-right: 20px;}
+.menu li~li{margin-left: 42px;}
+.menu .card a{width: 108px; height: 33px; line-height: 33px; color: #b22;
+      background-color: #faebd7; display: block; border-radius: 5px;
+      position: relative;top:-3px; box-shadow: 1px 1px 5px #000;}
+.card a::before{content: ""; display: inline-block; width: 26px; height: 25px;
+background: url(../images/icon_certi02.png); background-size: cover;
+margin: 0 6px 5px 12px; vertical-align: middle;}
+
+/* main */
+main{width: 555px; text-align: center; margin: 0 auto;}
+fieldset{border: 0;}    
+legend{width: 555px; padding: 170px 0 40px; font-size: 42px; border-bottom: 1px solid #f2e9d6;}
+legend+p{font-size: 22px; text-align: left; padding: 60px 0 20px;}
+input{border: 0; outline: 0; width: 555px; height: 45px;
+  border-bottom: 1px solid #f2e9d6; font-size: 16px;}
+input::placeholder{padding-left: 20px;}
+input[type="password"]{margin-bottom: 48px; margin-top: 16px;}
+button[type="submit"]{width: 555px; height: 55px; border: 0; color: #fff;
+  background-color: #DE1D24; font-size: 19px; font-weight: 300; margin-bottom: 20px; cursor: pointer;}
+form+p,form+p a{color: red; text-align: right; padding-bottom: 30px;}
+form+p+p{font-size: 22px; text-align: left;
+padding-bottom: 46px;}
+
+.naver,.kakao{width: 555px; height: 55px; line-height: 55px; display: block;
+  font-weight: 300; font-size: 19px;}
+.naver{background-color: #1Ec800; color: #fff; margin-bottom: 16px;}
+.kakao{background-color: #ffeb00; color: #212529; margin-bottom: 22px;}
+
+.naver::before{content: ""; display: inline-block; width: 22px; height: 22px; background: url(../images/icon_naver_login.png); vertical-align: middle; background-size: cover; margin-right: 22px; margin-bottom: 4px;}
+.kakao::before{content: ""; display: inline-block; width: 22px; height: 22px; background: url(../images/icon_kakao_login.png); vertical-align: middle; background-size: cover; margin-right: 22px; margin-bottom: 4px;}
+.naver span::before{content: ""; display: inline-block; width: 1px; height: 16px;
+  background-color: #a5e999; margin-right: 22px;}
+.kakao span::before{content: ""; display: inline-block; width: 1px; height: 16px;
+    background-color: #b1990c; margin-right: 22px;}
+
+main p:last-of-type{color: #212529; padding-bottom: 120px;}
+span a{color: red; margin-left: 16px;}
+
+/* footer */
+footer{background-color: #212529; width:100%; height: 282px;}
+
+.company{width: 1373px; margin: auto; padding: 30px 0 0 274px;}
+footer p img{width: 121px; height: 66px; opacity: 50%; margin-top: 18px;}
+footer p img,.company ul li,.company p{float: left; font-style: normal;}
+.company,.company a{color:#666;}
+strong{color: #fff;}
+.company ul{margin-left: 247px;}
+.company li{padding-right: 35px; margin-bottom: 20px;}
+.company span{padding-left: 12px;}
+address{margin-left: 182px;}
+address span::before{content: ""; display: inline-block;
+width: 2px; height: 18px; background-color: #666; margin-right: 12px; vertical-align: middle;}
+address+p{margin: 25px 0 0 303px;}
