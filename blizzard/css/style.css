@@ -1,0 +1,1021 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    font-family: 'Poppins',sans-serif;
+    overflow-x: hidden;
+}
+/* header */
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 100;
+}
+.wrapper{
+    width: 1888px;
+    height: 72px;
+    background-color: rgb(40,45,67,0.98);
+    filter: blur(0,0,5px);
+    border-radius: 10px;
+    margin: 16px 16px 0;
+    display: flex;
+    align-items: center;
+    padding: 0 12px 0 0;
+    z-index: 100;
+}
+.wrapper h1 img{
+    width: 80px;
+    height: 37px;
+    vertical-align: middle;
+    margin: 0 16px 0 32px;
+}
+header nav a,header nav ul,header nav ul li,
+header nav ul li ul{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+header nav{
+    width: 100%;
+}
+header nav ul{
+    justify-content: space-between;
+}
+.gnb ul li,.snb ul li{
+    padding: 16px;
+    border-radius: 8px;
+}
+.snb ul li:last-child{
+    padding: 0;
+}
+.gnb ul li:hover,.snb ul li:hover{
+    background-color: #2e3648;
+}
+.gnb ul li::after{
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-image: url(../images/다운로드\ \(3\).svg);
+    transform: rotate(270deg);
+    margin: 0 5px;
+}
+.gnb ul li:nth-child(5)::after,
+.gnb ul li:nth-child(6)::after{
+    display: none;
+}
+.snb ul li:nth-child(odd)::after{
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-image: url(../images/다운로드\ \(3\).svg);
+    transform: rotate(270deg);
+    margin: 0 5px;
+}
+.snb ul li:nth-child(3){
+    margin-right: 12px;
+}
+.snb ul li:nth-child(3)::before{
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 20px;
+    margin-right: 15px;
+    background-image: url(../images/icon.png);
+}
+.snb ul li,.snb ul li a{
+    font-size: 16px;
+}
+.snb ul li:last-child a::before{
+    content: '';
+    display: inline-block;
+    width: 21px;
+    height: 20px;
+    background-size: cover;
+    background-image: url(../images/Logo1.png);
+    margin: 0px 9px 0 25px;
+}
+.snb ul li:last-child a{
+    font-size: 16px;
+    width: 226px;
+    height: 48px;
+    line-height: 48px;
+    border: 1px solid #060c11;
+    border-radius: 8px;
+    background-color: #060c11;
+}
+header nav ul li ul li ul{
+    display: none;
+}
+/* tb_header */
+.tb_header{
+    width: 100%;
+    height: 56px;
+    background-color: #273047;
+    padding: 0 15px;
+    display: none;
+}
+.tb_header ul{
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tb_header ul li img{
+    width: 64px;
+    height: 32px;
+}
+.tb_header ul li:first-child button{
+    background-image: url(../images/menu.png);
+}
+.tb_header ul li button{
+    width: 24px;
+    height: 24px;
+    border: none;
+    background-image: url(../images/icon_1.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: transparent;
+}
+
+/* main */
+main{
+    width: 100%;
+    background-image: url(../images/2600_Featured_Games.webp);
+    background-position: 50% 0;
+}
+.slide{
+    width: 100%;
+}
+.slide div{
+    overflow: visible;
+}
+.slick-slide{
+    opacity: 50%;
+}
+.slide div.slick-current{
+    opacity: 100%;
+}
+.slide div img{
+    width: 1600px;
+    height: 720px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #000;
+    margin: 0 12px;
+}
+.slide div > ul > li > ul{
+    position: absolute;
+    top: 21%;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 600;
+}
+.slide div > ul > li > ul > li:first-child{
+    position: relative;
+    left: 14.8%;
+}
+.slide div > ul > li > ul > li:not(:first-child){
+    position: relative;
+    top: 11px;
+    left: 25.5%;
+}
+.slide div > ul > li > ul > li:nth-of-type(3){
+    font-size: 24px;
+    font-weight: 400;
+    margin: 31px 0 45px;
+    color: #ffffffb3;
+}
+.slide div > ul > li > ul > li:nth-of-type(4),
+.slide div > ul > li > ul > li:nth-of-type(5){
+    display: inline-block;
+}
+.slide div > ul > li > ul > li:nth-of-type(4) a,
+.slide div > ul > li > ul > li:nth-of-type(5) a{
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    display: inline-block;
+    font-size: 24px;
+    border-radius: 100px;
+    vertical-align: middle;
+}
+.slide div > ul > li > ul > li:nth-of-type(4) a{
+    width: 307px;
+    background-color: #178aef;
+    border: 2px solid #27adec;
+}
+.slide div > ul > li > ul > li:nth-of-type(4) a:hover{
+    background-color: #48b9ff;
+}
+.slide div > ul > li > ul > li:nth-of-type(5) a{
+    width: 206px;
+    background-color: rgb(93,113,152,0.4);
+    border: 2px solid rgba(131, 140, 158, 0.4);
+    margin-left: 2px;
+}
+.slide div > ul > li > ul > li:nth-of-type(5) a:hover{
+    background-color: rgb(131, 140, 158, 0.5);
+}
+.slide .slide_2 > ul > li > ul > li{
+    position: relative;
+}
+.slide .slide_2 > ul > li > ul > li:first-child{
+    top: -18px;
+    left: 32.4%;
+}
+.slide .slide_2 > ul > li > ul > li:first-child img{
+    width: 360px;
+    height: 220px;
+}
+.slide .slide_2 > ul > li > ul > li:nth-child(2){
+    top: -48px;
+    left: 34.8%;
+}
+.slide .slide_2 > ul > li > ul > li:nth-child(2) span{
+    display: block;
+    color: #fff;
+    margin-top: 6px;
+}
+.slide .slide_2 > ul > li > ul > li:nth-child(3){
+    top: -48px;
+    left: 34.4%;
+}
+.slide .slide_2 > ul > li > ul > li:nth-child(4) a{
+    width: 176px;
+}
+.slide .slide_2 > ul > li > ul > li:nth-child(4),
+.slide .slide_2 > ul > li > ul > li:nth-child(5){
+    top: -48px;
+    left: 34.8%;
+}
+.slide .slide_3 > ul > li > ul > li{
+    position: relative;
+}
+.slide .slide_3 > ul > li > ul > li:first-child{
+    top: 8px;
+    left: 23.3%;
+}
+.slide .slide_3 > ul > li > ul > li:nth-child(2),
+.slide .slide_3 > ul > li > ul > li:nth-child(3),
+.slide .slide_3 > ul > li > ul > li:nth-child(4){
+    top: 11px;
+    left: 25%;
+}
+.slide .slide_3 > ul > li > ul > li:nth-child(4) a{
+    width: 206px;
+}
+.slide .slide_4 > ul > li > ul > li{
+    position: relative;
+    text-align: center;
+}
+.slide .slide_4 > ul > li > ul > li:first-child{
+    top: 15px;
+    left: 79.1%;
+}
+.slide .slide_4 span{
+    color: #fff;
+    display: block;
+    padding: none;
+    margin-top: 6px;
+}
+.slide .slide_4 > ul > li > ul > li:nth-child(2),
+.slide .slide_4 > ul > li > ul > li:nth-child(3),
+.slide .slide_4 > ul > li > ul > li:nth-child(4),
+.slide .slide_4 > ul > li > ul > li:nth-child(5){
+    top: -40px;
+    left: 51.6%;
+}
+.slide .slide_4 > ul > li > ul > li:nth-child(4) a,
+.slide .slide_4 > ul > li > ul > li:nth-child(5) a{
+    width: 349px;
+    height: 110px;
+    margin-top: 1px;
+}
+.slide .slide_4 > ul > li > ul > li:nth-child(5) a{
+    width: 426px;
+}
+.slide .slide_4 > ul > li > ul > li:nth-child(4) a span,
+.slide .slide_4 > ul > li > ul > li:nth-child(5) a span{
+    margin: -40px;
+}
+.slide .slide_5 > ul > li > ul > li:first-child{
+    top: 8px;
+    left: 23.8%;
+}
+.slide .slide_5 > ul > li > ul > li:nth-child(4) a{
+    width: 206px;
+}
+.slide div > ul > li > ul li,
+.slide div > ul > li > ul li a{
+    color: #fff;
+}
+.slide div > ul > li > ul li img{
+    width: 336px;
+    height: 168px;
+    object-fit: contain;
+    box-shadow: none;
+}
+.slick-dots{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, -50%);
+}
+.slick-dots li{
+    display: inline-block;
+}
+.slick-dots button{
+    width: 100px;
+    height: 12px;
+    color: transparent;
+    border: none;
+    border-radius: 4px;
+    background-color: #8697aa;
+    bottom: 32px;
+    left: 50%;
+    margin: 0 16px 0 0;
+}
+.slick-dots .slick-active button{
+    background-color: #fff;
+    height: 16px;
+}
+.slick-dots button:hover{
+    background-color: #fff;
+}
+.slick-next.slick-arrow,
+.slick-prev.slick-arrow{
+    width: 56px;
+    height: 56px;
+    border: none;
+    border-radius: 50%;
+    background-color: #333b4b;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    color: transparent;
+    position: absolute;
+}
+.slick-next.slick-arrow{
+    top: 52.2%;
+    right: 111.5px;
+    background-image: url(../images/arrow_next.png);
+}
+.slick-prev.slick-arrow{
+    z-index: 1;
+    top: 52.2%;
+    left: 111.5px;
+    background-image: url(../images/arrow_prev.png);
+}
+
+/* main game section */
+.recommend{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.recommend > div{
+    width: 84%;
+}
+.recommend > div > div,
+.recommend > div > div > ul{
+    display: flex;
+}
+.recommend > div > div{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 70px 0 53px;
+}
+.recommend > div > div:last-child{
+    margin: 80px 0;
+}
+.recommend > div > div h2{
+    font-size: 36px;
+    font-weight: 900;
+    color: #fff;
+}.recommend > div > div ul li:not(:last-child){
+    margin-right: 12px;
+}
+.recommend > div > div button{
+    height: 33px;
+    line-height: 33px;
+    padding: 0 24px;
+    border: none;
+    border-radius: 100px;
+    background-color: rgba(208, 233, 255, 0.2);
+    font-size: 16px;
+    font-weight: 550;
+    color: #fff;
+    margin: 0;
+}
+.recommend > div > div button:hover{
+    background-color: rgba(208, 233, 255, 0.3);
+}
+.recommend > div > div.all_game{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.all_game > div{
+    width: 20%;
+}
+.all_game > div > ul{
+    position: relative;
+}
+.all_game > div > ul:first-child > li:first-child img{
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 1;
+    border-radius: 5px;
+}
+.all_game > div > ul:first-child > li:nth-child(2) img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+.all_game > div > ul:first-child > li:nth-child(3) video{
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 5px;
+    display: none;
+}
+.all_game > div > ul:nth-child(2) > li:not(:last-child){
+    color: #fff;
+}
+.all_game > div > ul:nth-child(2) > li:first-child{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 17px;
+}
+.all_game > div > ul:nth-child(2) > li:nth-child(2){
+    color: #8597aa;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 13px 0 17px;
+}
+.recommend > div > div:last-child a{
+    width: 236px;
+    height: 75px;
+    line-height: 75px;
+    border: 2px solid #27adec;
+    border-radius: 100px;
+    font-size: 24px;
+    margin: 0 auto;
+    font-weight: 600;
+    color: #fff;
+    background-color: #128ded;
+    text-align: center;
+}
+.recommend > div > div:last-child a:hover{
+    background-color: #48b9ff;
+}
+
+/* main battlenet download */
+.battlenet_download{
+    width: 100%;
+    height: 800px;
+    background-image: url(../images/2600_Promo.webp);
+    background-position: 50% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.battlenet_download div{
+    width: 84%;
+    height: 640px;
+    border-radius: 10px;
+    background-image: url(../images/Desktop.webp);
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 10px #000;
+}
+.battlenet_download div ul{
+    margin: 123px 0 0 160px;
+}
+.battlenet_download div ul img{
+    width: 336px;
+    height: 103px;
+    object-fit: contain;
+}
+.battlenet_download div ul li,
+.battlenet_download div ul li span,
+.battlenet_download div ul li a{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 600;
+}
+.battlenet_download div ul li:nth-child(2){
+    margin: -6px 0 0 -1px;
+}
+.battlenet_download div ul li span{
+    display: block;
+    padding: 6px 0 28px;
+}
+.battlenet_download div ul li:nth-child(3){
+    color: #ffffffb3;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0 0 38px -1px;
+}
+.battlenet_download div ul li:nth-child(4),
+.battlenet_download div ul li:nth-child(5){
+    display: inline-block;
+}
+.battlenet_download div ul li a{
+    font-size: 24px;
+    font-weight: 600;
+}
+.battlenet_download div ul li:nth-child(4) a,
+.battlenet_download div ul li:nth-child(5) a{
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 100px;
+}
+.battlenet_download div ul li:nth-child(4) a{
+    width: 176px;
+    border: 2px solid #27adec;
+    background-color: #178aef;
+}
+.battlenet_download div ul li:nth-child(4) a:hover{
+    background-color: #48b9ff;
+}
+.battlenet_download div ul li:nth-child(5) a{
+    width: 205px;
+    background-color: rgb(93,113,152,0.4);
+    border: 2px solid rgba(131, 140, 158, 0.4);
+    margin-left: 11px;
+}
+.battlenet_download div ul li:nth-child(5) a:hover{
+    background-color: rgb(93,113,152,0.5);
+}
+
+/* footer */
+footer{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/Desktop_Blizz_Footer.jpg);
+    background-position: 50% 100%;
+    display: flex;
+    justify-content: center;
+}
+footer > div:first-child{
+    width: 1400px;
+    margin-top: 120px;
+    margin-bottom: 160px;
+}
+footer > div > ul,
+footer > div:first-child > div ul,
+footer > div:first-child > div{
+    display: flex;
+}
+footer > div > div{
+    justify-content: space-between;
+    align-items: center;
+}
+footer > div > div ul{
+    width: 870px;
+    justify-content: space-around;
+}
+footer > div > div > ul a{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    padding: 12px 16px;
+}
+footer > div > div > ul a:hover,
+footer > div > div > div button:hover,
+.wrapper_tb_footer > div button:hover{
+    background-color: #2e3648;
+    border-radius: 10px;
+}
+footer > div > div > div button,
+.wrapper_tb_footer > div button{
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 16px;
+}
+footer > div > div > div button::before,
+.wrapper_tb_footer > div button::before{
+    content: '';
+    display: inline-block;
+    background-image: url(../images/lang.png);
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+footer > div > div > div button::after,
+.wrapper_tb_footer > div button::after{
+    content: '';
+    display: inline-block;
+    background-image: url(../images/다운로드\ \(3\).svg);
+    transform: rotate(270deg);
+    width: 10px;
+    height: 9px;
+    vertical-align: middle;
+    margin: 0 10px 0 5px;
+}
+hr{
+    background: #243b4f;
+    height: 2px;
+    border: 0;
+    margin: 33px 0 43px;
+}
+footer > div > ul{
+    margin-bottom: 53px;
+}
+footer > div > ul li,
+footer> div > ul li a,
+footer .tb_footer .wrapper_tb_footer > ul:nth-of-type(2) li,
+footer .tb_footer .wrapper_tb_footer > ul:nth-of-type(2) li a,
+footer .tb_footer .wrapper_tb_footer > ul:nth-of-type(3) li a{
+    color: #b3b8bd;
+}
+footer > div > ul > li:nth-child(2){
+    width: 100%;
+}
+footer div .copyright > li > ul,
+footer > div > ul > li > ul,
+footer div > ul .sns{
+    display: flex;
+}
+footer div > ul > li > ul{
+    justify-content: space-between;
+}
+footer div .copyright > li:first-child,
+footer div .copyright > li:nth-child(2){
+    font-size: 13px;
+    color: #74818e;
+    font-weight: 600;
+}
+footer div .copyright > li:nth-child(2) a,
+footer .tb_footer .wrapper_tb_footer > ul:nth-of-type(2) li a{
+    text-decoration: underline;
+}
+footer div .copyright > li:nth-child(2){
+    margin-top: 8px;
+}
+footer div .copyright > li > ul{
+    margin-top: 24px;
+}
+footer div .copyright > li > ul > li a,
+footer .tb_footer .wrapper_tb_footer > ul:nth-of-type(3) li a{
+    font-size: 14px;
+    font-weight: 500;
+}
+footer div .copyright > li > ul > li:not(:first-child){
+    margin-left: 19px;
+}
+footer > div > ul > li:first-child{
+    margin-right: 40px;
+}
+footer > div > ul li img{
+    width: 150px;
+    height: 80px;
+    object-fit: contain;
+}
+footer > div > address p,
+footer > div > address a,
+footer .tb_footer .wrapper_tb_footer > address p,
+footer .tb_footer .wrapper_tb_footer > address p a{
+    font-size: 14px;
+    color: #b3b8bd;
+}
+footer > div > address p,
+footer .tb_footer .wrapper_tb_footer > address p{
+    margin-bottom: 6px;
+}
+/*  */
+footer div.tb_footer{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+footer div.tb_footer .wrapper_tb_footer{
+    width: 100%;
+    height: 100%;
+    padding: 30px 0 30px;
+}
+footer div.tb_footer .wrapper_tb_footer > ul:nth-of-type(1){
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 5px 40px;
+}
+footer div.tb_footer .wrapper_tb_footer > ul:nth-of-type(1) li{
+    margin-top: 35px;
+}
+footer div.tb_footer .wrapper_tb_footer > ul:nth-of-type(1) a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+footer div.tb_footer .wrapper_tb_footer > ul:nth-of-type(2){
+    width: 100%;
+    font-size: 14px;
+    margin-top: 40px;
+}
+footer div.tb_footer .wrapper_tb_footer > ul:nth-of-type(2) > li:first-child{
+    margin-bottom: 5px;
+}
+footer div.tb_footer .wrapper_tb_footer > ul:nth-of-type(2) > li a{
+    font-size: 14px;
+    font-weight: 900;
+    padding: 0;
+    margin: 0;
+}
+footer div.tb_footer .wrapper_tb_footer > ul:nth-of-type(3){
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 0 50px;
+}
+footer div.tb_footer .wrapper_tb_footer > ul:nth-of-type(3) > li{
+    margin-top: 20px;
+}
+footer div.tb_footer{
+    display: none;
+}
+
+/* media query */
+@media screen and (max-width: 1400px) {
+    header nav .gnb > ul > li:nth-child(5){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .all_game > div{
+        width: 25%;
+    }
+    header nav .gnb > ul > li:nth-child(4){
+        display: none;
+    }
+    .battlenet_download div{
+        width: 92%;
+    }
+    .battlenet_download div ul{
+        margin: 123px 0 0 100px;
+    }
+    .slide div img{
+        width: 1008px;
+        margin: 0 10px;
+    }
+    .slide div > ul > li > ul > li:first-child{
+        position: relative;
+        left: 4.8%;
+    }
+    .slide div > ul > li > ul > li:not(:first-child){
+        position: relative;
+        top: 11px;
+        left: 15.5%;
+    }
+    .slide .slide_2 > ul > li > ul > li:first-child{
+        top: -18px;
+        left: 22.4%;
+    }
+    .slide .slide_3 > ul > li > ul > li:first-child{
+        top: 8px;
+        left: 8.3%;
+    }
+    .slide .slide_3 > ul > li > ul > li:nth-child(2),
+    .slide .slide_3 > ul > li > ul > li:nth-child(3),
+    .slide .slide_3 > ul > li > ul > li:nth-child(4){
+    top: 11px;
+    left: 15%;
+    }
+    .slide .slide_4 > ul > li > ul > li:first-child{
+        top: 15px;
+        left: 41.9%;
+    }
+    .slide .slide_4 > ul > li > ul > li:nth-child(2),
+    .slide .slide_4 > ul > li > ul > li:nth-child(3),
+    .slide .slide_4 > ul > li > ul > li:nth-child(4),
+    .slide .slide_4 > ul > li > ul > li:nth-child(5){
+    top: -40px;
+    left: 15%;
+    }
+    .slide .slide_5 > ul > li > ul > li:first-child{
+        top: 8px;
+        left: 13.8%;
+    }
+}
+@media screen and (max-width: 1100px) {
+    header nav .gnb > ul > li:nth-child(3){
+        display: none;
+    }
+    .gnb ul li,.snb ul li{
+        padding: 12px 8px;
+    }
+    .wrapper h1 img{
+        margin: 0 16px 0 16px;
+    }
+    footer > div:first-child{
+        display: none;
+    }
+    footer div.tb_footer{
+        display: block;
+    }
+}
+@media screen and (max-width: 960px) {
+    .wrapper{
+        display: none;
+    }
+    .all_game > div{
+        width: 33.3333%;
+    }
+    .tb_header{
+        display: block;
+    }
+    .battlenet_download div{
+        width: 96%;
+        height: 62%;
+        background-image: url(../images/Desktop.webp);
+        background-size: auto;
+        background-position: 20% 50%;
+    }
+    .battlenet_download div ul{
+        margin: 90px 0 0;
+        text-align: center;
+    }
+    .battlenet_download div ul li:nth-child(2){
+        margin: 20px 0;
+        font-size: 50px;
+    }
+    .battlenet_download div ul li:nth-child(2) span{
+        font-size: 50px;
+    }
+    .battlenet_download div ul li span{
+        display: inline;
+    }
+}
+@media screen and (max-width: 720px) {
+    .all_game > div{
+        width: 50%;
+    }
+    .battlenet_download div{
+        width: 92%;
+        height: 50%;
+        background-image: url(../images/Desktop.webp);
+        background-size: cover;
+        background-position: 20% 50%;
+    }
+    .battlenet_download div ul{
+        margin: 70px 0 0;
+        text-align: center;
+    }
+    .battlenet_download div ul li:first-child img{
+        width: 300px;
+        height: 72px;
+    }
+    .battlenet_download div ul li:nth-child(2){
+        margin: 10px 0 20px;
+        font-size: 30px;
+    }
+    .battlenet_download div ul li:nth-child(3){
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .battlenet_download div ul li:nth-child(2) span{
+        font-size: 30px;
+    }
+    .battlenet_download div ul li span{
+        display: inline;
+    }
+    .battlenet_download div ul li a{
+        font-size: 20px;
+    }
+    .battlenet_download div ul li:nth-child(4) a{
+        width: 150px;
+    }
+    .battlenet_download div ul li:nth-child(5) a{
+        width: 170px;
+    }
+    .recommend > div > div {
+        margin: 40px 0 20px;
+    }
+    .recommend > div > div > ul{
+        margin: 20px 0 0;
+    }
+    .slick-dots button{
+        width: 52px;
+        height: 8px;
+        border-radius: 2px;
+        margin: 0 16px 0 0;
+    }
+    .slick-dots .slick-active button{
+        height: 10px;
+    }
+
+
+    .slide div img{
+        width: 696px;
+        height: 600px;
+    }
+
+
+    .slide div > ul > li > ul{
+        font-size: 30px;
+        text-align: center;
+    }
+    .slide div > ul > li > ul > li:first-child{
+        left: 38%;
+    }
+    .slide div > ul > li > ul > li:not(:first-child){
+        position: relative;
+        left: 27%;
+    }
+    .slide div > ul > li > ul > li:nth-of-type(3){
+        font-size: 16px;
+        margin: 20px 0 30px;
+    }
+    .slide div > ul > li > ul > li:nth-of-type(4) a,
+    .slide div > ul > li > ul > li:nth-of-type(5) a{
+        height: 65px;
+        line-height: 65px;
+        font-size: 20px;
+    }
+    .slide div > ul > li > ul > li:nth-of-type(4) a{
+        width: 250px;
+        background-color: #178aef;
+        border: 2px solid #27adec;
+    }
+    .slide div > ul > li > ul > li:nth-of-type(5) a{
+        width: 200px;
+        background-color: rgb(93,113,152,0.4);
+        border: 2px solid rgba(131, 140, 158, 0.4);
+        margin-left: 2px;
+    }
+    .slide .slide_2 > ul > li > ul > li:first-child{
+        top: -40px;
+        left: 40.4%;
+    }
+    .slide .slide_2 > ul > li > ul > li:nth-child(2){
+        top: -58px;
+        left: 40.8%;
+    }
+    .slide .slide_2 > ul > li > ul > li:nth-child(3){
+        top: -48px;
+        left: 40.4%;
+    }
+    .slide .slide_2 > ul > li > ul > li:nth-child(4),
+    .slide .slide_2 > ul > li > ul > li:nth-child(5){
+        top: -48px;
+        left: 40.8%;
+    }
+    .slide .slide_3 > ul > li > ul > li:first-child{
+        top: 8px;
+        left: 50%;
+    }
+    .slide .slide_3 > ul > li > ul > li:nth-child(2),
+    .slide .slide_3 > ul > li > ul > li:nth-child(3),
+    .slide .slide_3 > ul > li > ul > li:nth-child(4){
+        top: 30px;
+        left: 50%;
+    }
+    .slide .slide_4 > ul > li > ul > li:first-child{
+        top: 10px;
+        left: 37%;
+    }
+    .slide .slide_4 > ul > li > ul > li:nth-child(2),
+    .slide .slide_4 > ul > li > ul > li:nth-child(3),
+    .slide .slide_4 > ul > li > ul > li:nth-child(4),
+    .slide .slide_4 > ul > li > ul > li:nth-child(5){
+        top: -40px;
+        left: 22%;
+    }
+    .slide .slide_4 > ul > li > ul > li:nth-child(4) a,
+    .slide .slide_4 > ul > li > ul > li:nth-child(5) a{
+        width: 200px;
+        height: 90px;
+    }
+    .slide .slide_5 > ul > li > ul > li:first-child{
+        top: 0;
+        left: 50%;
+    }
+    .slide .slide_5 > ul > li > ul > li:nth-child(2),
+    .slide .slide_5 > ul > li > ul > li:nth-child(3),
+    .slide .slide_5 > ul > li > ul > li:nth-child(4){
+        top: 40px;
+        left: 50%;
+    }
+}

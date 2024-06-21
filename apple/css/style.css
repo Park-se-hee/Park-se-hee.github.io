@@ -1,106 +1,488 @@
-.inner{width: 980px; margin: 0 auto;}
-a{text-decoration: none; color: #000;}
-ul{list-style: none;}
-.blind{overflow: hidden; position: absolute; width: 0; height: 0;
-    line-height: 0; text-indent: -9999px;}
+@import url(reset.css);
+body{
+    overflow-x: hidden;
+}
+/* header */
+header{
+    width: 100%;
+    height: 44px;
+    background-color: rgb(245, 245, 248,0.8);
+    backdrop-filter: blur(15px);
+    font-size: 11px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    position: relative;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 980px;
+}
+.gnb{
+    width: 100%;
+}
+.gnb > ul, .wrapper > ul:last-child{display: flex; justify-content: space-around;}
+.wrapper > ul:last-child{
+    width: 90px;
+    justify-content: space-between;
+}
+.wrapper > ul:last-child li button{
+    height: 44px; vertical-align: middle;
+    border: none;
+    background-color: transparent;
+}
+.gnb > ul > li > ul > li{
+    display: none;
+}
+.gnb > ul > li:hover > ul > li{
+    display: block;
+    /* position: static; */
+}
+.gnb > ul > li > ul{
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 44px;
+    width: 100%;
+    font-size: 11px;
+    font-weight: 600;
+    background-color: rgb(245, 245, 248,1);
+}
+.gnb > ul > li > ul > li{
+    position: relative;
+    left: 24%;
+    padding: 40px 0 50px;
+    color: gray;
+}
+.gnb > ul > li > ul > li a{
+    font-size: 20px;
+    font-weight: 900;
+    display: inline-block;
+    padding: 5px 0;
+    color: #222;
+}
+.gnb > ul > li > ul > li > ul{
+    margin-top: 10px;
+    align-items: center;
+}
+.gnb > ul > li > ul > li:not(:first-child){
+    margin-left: 50px;
+}
+.gnb > ul > li > ul > li:not(:first-child) a{
+    font-size: 11px;
+}
 
-/* header 시작 */
-header{width: 100%; height: 44px; line-height: 44px;
-    background-color: #313132; display: flex; position: fixed; z-index: 1;}
-header a{color: #f5f5f7;}
-header h1{float: left; width: 16px; margin-right: 46px;}
-header nav ul{display: flex; justify-content: space-between;
-    font-size: 11px;}
-header nav ul li:nth-of-type(11) button{border: 0; background-color: transparent; width: 14px; height: 20px;
-background: url(../images/globalnav_search_image__cbllq1gkias2_large.svg) 0 -57px;
-vertical-align: middle;}
-header nav ul li:last-child button{width: 14px; height: 20px; vertical-align: middle; border: 0; background: url(../images/globalnav_bag_image__yzte50i47ciu_large.svg) 0 -12px no-repeat;}
+/* main */
+main{width: 100%; padding-top: 44px;}
+main > div p{
+    height: 54px; line-height: 54px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 12px;
+}
+main > div p a{
+    color: #0066cc;
+}
+.mac_book,.ipad,.iphone{
+    height: 692px;
+    background-image: url(../images/hero_macbook_air_m3__cp4t7pn8zqaa_largetall.jpg);
+    background-position: 50% 100%;
+    color: #222;
+    margin-bottom: 12px;
+}
+.mac_book h2,.ipad h2,.iphone h2{
+    font-weight: 800;
+    font-size: 55px;
+    padding-top: 60px;
+    text-align: center;
+}
+.mac_book p{
+    background-color: transparent;
+    font-size: 23px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+.mac_book ul,.ipad ul,.iphone ul{
+    display: flex; justify-content: center;
+    font-size: 15px;
+    margin-top: 25px;
+}
+.mac_book ul li:first-child a,
+.ipad ul li:first-child a,
+.iphone ul li:first-child a{
+    border: 1px solid #0071e3;
+    background-color: #0071e3;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 17px;
+    margin-right: 17px;
+    font-weight: 600;
+}
+.mac_book ul li:last-child a,
+.ipad ul li:last-child a,
+.iphone ul li:last-child a{
+    border: 1px solid #0066cc;
+    color: #0066cc;
+    background-color: transparent;
+    border-radius: 30px;
+    padding: 10px 17px;
+}
+.mac_book ul li:first-child a:hover,
+.ipad ul li:first-child a:hover,
+.iphone ul li:first-child a:hover{
+    background-color: #0077ed;
+}
+.mac_book ul li:last-child a:hover,
+.ipad ul li:last-child a:hover,
+.iphone ul li:last-child a:hover{
+    background-color: #0071e3;
+    color: #fff;
+}
 
-/* main 시작 */
-section{width: 100%; height: 692px; text-align: center; margin-bottom: 12px;}
-.new{background: url(../images/hero_iphone14pro_preorder__cc1jjc6hq7ma_largetall.jpg) 50% 100%;
-    color: #fff;}
-h2{font-size: 41px; font-weight: 900; padding: 66px 0 25px;}
-section p{font-size: 24px; font-weight: 500;}
-section p:nth-of-type(2){font-size: 20px; color: #6d6d71;
-    padding: 26px 0; font-weight: 500;}
-section a{font-size: 18px; color: #2997ff;}
-section a:hover,footer a:hover{text-decoration: underline;}
-section ul li{display: inline-block; padding: 0 21px;}
+.ipad{
+    background-image: url(../images/hero_ipadpro_announce__gi60pcfhpeie_largetall.jpg);
+}
+.ipad h2,.iphone h2{
+    color: #fff;
+}
+.ipad h2+p{
+    background-color: transparent;
+    font-size: 23px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #fff;
+}
+.ipad p:nth-child(3){
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: -10px;
+    color: #86868b;
+}
+.ipad ul{
+    margin-top: 15px;
+}
+.iphone{
+    background-image: url(../images/hero_iphone15pro__i70z9oz3hj2i_largetall.jpg);
+}
+.iphone h2+p{
+    background-color: transparent;
+    font-size: 23px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #fff;
+}
+.iphone ul{
+    margin-top: 20px;
+}
+.content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.content div{
+    width: 49%;
+    height: 580px;
+    margin: 0 6px 12px;
+}
+.content div:first-child{
+    background-image: url(../images/promo_wwdc24_announce__fv0p5miwnjiq_large.jpg);
+}
+.content div:nth-child(2){
+    background-image: url(../images/promo_pride__6iq9ryajnw2q_large.jpg);
+}
+.content div:nth-child(3){
+    background-image: url(../images/promo_college_students__bxqdcoxgjzw2_large.jpg);
+}
+.content div:nth-child(4){
+    background-image: url(../images/promo_apple_watch_series_9_order__b3u85rm9zf6u_large.jpg);
+}
+.content div:nth-child(5){
+    background-image: url(../images/promo_ipadair_announce__eqsaj3vip4om_large.jpg);
+}
+.content div:last-child{
+    background-image: url(../images/promo_airpods_pro_order__d8xv36p4uwae_large.jpg);
+}
+.content div:first-child,.content div:nth-child(2),
+.content div:nth-child(3),.content div:nth-child(4),
+.content div:nth-child(5),.content div:last-child{
+    background-position: 50% 100%;
+}
+.content div ul li,
+.content div p{
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+.content div:first-child ul{
+    margin-top: 425px;
+}
+.content div:first-child ul li{
+    padding-bottom: 7px;
+}
+.content div:first-child ul li:last-child{
+    padding-top: 20px;
+}
+.content div:nth-child(5) p{
+    color: #000;
+}
+.content div:nth-child(2) ul li:first-child{
+    margin: 58px 0 17px;
+}
+.content div:nth-child(2) ul li:nth-child(2){
+    margin-bottom: 10px;
+}
+.content div:nth-child(2) ul li:last-child{
+    margin: 25px 0 0 10px;
+}
+.content div ul li a{
+    border: 1px solid #0071e3;
+    background-color: #0071e3;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 12px;
+    margin-right: 10px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.content div li a:hover{
+    background-color: #0077ed;
+    color: #fff;
+}
+.content .second_link a{
+    border: 1px solid #0066cc;
+    color: #0066cc;
+    background-color: transparent;
+    border-radius: 30px;
+    padding: 10px 12px;
+}
+.content div:nth-child(3) ul{
+    margin-top: 400px;
+}
+.content div:nth-child(3) ul li:first-child{
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+.content div:nth-child(3) ul li:last-child{
+    margin: 22px 0 0;
+}
+.content div:nth-child(4) p:first-child{
+    margin: 40px 0 15px;
+}
+.content div:nth-child(4) ul,
+.content div:nth-child(5) ul,
+.content div:nth-child(6) ul{
+    display: flex;
+    margin-top: 22px;
+    justify-content: center;
+}
+.content div:nth-child(5) p:first-child{
+    margin: 60px 0 16px;
+}
+.content div:nth-child(5) p:nth-child(3){
+    color: #516269;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 21px;
+}
+.content div:nth-child(6) p:first-child{
+    font-size: 40px;
+    margin: 60px 0 17px;
+}
+.content div:nth-child(5) li a{
+    border: 1px solid #1d1d1f;
+    background-color: #1d1d1f;
+}
+.content div:nth-child(5) li:last-child a{
+    background-color: transparent;
+    color: #222;
+}
+.content div:nth-child(5) li a:hover{
+    background-color: #272729;
+    color: #fff;
+}
+.content div:last-child ul li:nth-child(2){
+    margin-bottom: 30px;
+}
+.content div:last-child ul li:nth-child(3){
+    margin-left: 365px;
+}
+.content div:nth-child(4) ul li:nth-child(3),
+.content div:nth-child(4) ul li:nth-child(4),
+.content div:nth-child(5) ul li:nth-child(4),
+.content div:nth-child(5) ul li:nth-child(5),
+.content div:last-child ul li:nth-child(3),
+.content div:last-child ul li:nth-child(4){
+    display: inline-block;
+}
 
-.iphone{background: url(../images/hero_iphone14_preorder__c4g2wjzuugqe_largetall.jpg) 50% 100%;}
-.watch{background: url(../images/hero_apple_watch_series_8_order__guu7e4m2jpim_largetall.jpg) 50% 100%;}
-.watch p:first-of-type{color: #fff;}
-
-/* promotion 부분 */
-.promo{height: 1764px; display: flex; flex-wrap: wrap;}
-.promo h2{padding: 60px 0 15px;}
-.promo li{padding: 0 6px 0 6px;}
-.promo li a{font-size: 15px; font-weight: 600;}
-.promo div{width: 939px; height: 580px; margin: 0 0 12px 12px;}
-
-.ultra{background: url(../images/promo_apple_watch_ultra_avail__ddgwll601eie_large.jpg) 50% 100%;}
-.se{background: url(../images/promo_apple_watch_se_avail__e5unstfyokae_large.jpg) 50% 100%;}
-.airpods{background: url(../images/promo_airpods_pro_avail__gaxggskofx6y_large.jpg) 50% 100%;}
-.ipad{background: url(../images/promo_ipadair_avail__ferd4bfpcdm6_large.jpg) 50% 100%;}
-.store{background: url(../images/promo_jamsil__eqekd92guu4i_large.jpg) 50% 100%;}
-.macbook{background: url(../images/promo_mbp13__buwssod6c8vm_large.jpg) 50% 100%;}
-
-.ultra p,.se p,.airpods p{font-size: 18px; font-weight: 500;}
-.ultra p:nth-of-type(2),
-.se p:nth-of-type(2),
-.airpods p:nth-of-type(2){font-size: 15px; font-weight: 500; padding: 17px 0 19px;}
-.airpods h2,.airpods p:nth-of-type(1),.ipad p,.macbook h2{color: #fff;}
-.ipad p{padding-bottom: 20px; font-size: 18px;}
-.store p:first-of-type{padding-top: 10px;}
-.store p:nth-of-type(2){padding-top: 13px;}
-.store p:nth-of-type(2) a{font-size: 15px; font-weight: 600;}
-.macbook p{margin-left: 23px;}
-
-/* banner 부분 */
-.banner{height: 705px;}
-.swiper img{
+/* slide */
+.slide{
+    width: 100%;
+    margin-bottom: 38px;
+}
+.slide div{
+    padding: 0 7px;
+}
+.slide div p b{
+    color: #fff;
+    font-weight: 900;
+}
+.slide div p{
+    text-shadow: 0 0 5px #000;
+    position: absolute;
+    bottom: 56px;
+    margin-left: 70px;
+    background-color: transparent;
+    font-size: 20px;
+    color: #fff;
+}
+.slide div p a{
+    text-shadow: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+    display: inline-block;
+    width: 128px;
+    height: 44px;
+    line-height: 44px;
+    border-radius: 500px;
+    background-color: #f5f5f7;
+    margin-right: 18px;
+}
+.slick-slide{
+    opacity: 50%;
+}
+.slick-slide.slick-current{
+    opacity: 100%;
+}
+.slide div img{
     width: 1250px;
     height: 667px;
-  }
-.slick-slide{margin: 0 10px 0; opacity: 50%;}
-.slick-current{opacity: 100%;}
-button.slick-arrow{color: transparent; width: 0; height: 0; background: transparent; border: 0;}
+}
+.slick-dots{
+    position: absolute;
+    left: 50%;
+    bottom: -35px;
+    transform: translate(-50%, -50%);
+}
+.slick-dots li{
+    display: inline-block;
+}
+.slick-dots button{
+    width: 1px;
+    height: 10px;
+    margin: 0 5px;
+    color: transparent;
+    border: none;
+    border-radius: 50%;
+    background-color: #949494;
+}
+.slick-active button{
+    background-color: #333333;
+}
 
-#slick-slide-control00,
-#slick-slide-control01,
-#slick-slide-control02,
-#slick-slide-control03,
-#slick-slide-control04,
-#slick-slide-control05,
-#slick-slide-control06,
-#slick-slide-control07,
-#slick-slide-control08,
-#slick-slide-control09,
-#slick-slide-control010{color: transparent; border: 0; border-radius: 50%; width: 1px; height: 10px;
-position: absolute;bottom:1.2%;}
-.slick-active button{background: #888;}
+/* footer */
+footer{
+    width: 100%;
+    height: 745px;
+    background-color: #f5f5f7;
+    box-sizing: border-box;
+}
+.center{
+    width: 980px;
+    height: 745px;
+    margin: 0 auto;
+}
+.footer_text_1{
+    padding-top: 20px;
+    font-size: 12px;
+    color: #cececf;
+}
+hr{
+    background:#cececf;
+    height:1px;
+    border:0;
+    margin: 20px 0;
+}
 
-/* footer 시작 */
-footer{width: 100%; height: 485px; background-color: #f5f5f7;
-font-size: 11px; margin-top: 50px;}
-footer>div{display: flex;}
-footer>div:first-child>ul{margin-right: 91px;}
-footer>div:nth-child(2){flex-direction: column;}
-footer>div:nth-child(2) p a{color: #06c;}
+/* fnb */
+.fnb{
+    box-sizing: border-box;
+    display: flex;
+}
+.fnb > ul:not(:first-child){
+    margin-left: 90px;
+}
+.fnb > ul > li{
+    color: #1e1e1e;
+    font-size: 12px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+.fnb > ul > li ul{
+    font-size: 11px;
+    font-weight: 300;
+}
+.fnb > ul > li ul li{
+    margin-top: 15px;
+}
+.shoping{
+    font-size: 11px;
+    margin-top: 10px;
+}
+.shoping a{
+    text-decoration: underline;
+    color: #0066cc;
+}
 
-footer>div>p{margin-top: 39px; padding-bottom: 11px;}
-.info{display: flex; border-top: 1px solid #d2d2d7; padding-top: 11px;}
-footer>div:first-child>ul>li{color: #1d1d1f; font-weight: 900; padding-top: 22px;}
-footer>div:last-child>p{color: #6e6e73;}
-footer li a{color: #626273; font-weight: 500;}
-.bmenu li{margin-top: 15px;}
+/* copyright */
+.copyright li,.copyright li ul{
+    display: flex;
+    align-items: center;
+}
+.copyright li{
+    font-size: 13px;
+}
+.copyright li ul{
+    margin-left: 30px;
+}
+.copyright li ul a{
+    font-size: 11px;
+}
+.copyright li ul li:not(:last-of-type)::before{
+    content: "|";
+    padding: 0 7px;
+}
+.copyright li ul li:first-child::before{
+    display: none;
+}
+.copyright li ul li:last-child{
+    margin-left: 208px;
+}
 
-.info a{color: #424245; font-weight: 600; margin-left: 10px;}
-.info li:first-child{margin-right: 22px; color: #6e6e73;}
-.info li:last-child{margin-left: 239px;}
-.impo::before{content: ""; display: inline-block; width: 1px; height: 16px;
-background-color: #d2d2d7; vertical-align: middle; margin-right: 10px;}
-address{padding-top: 10px; color: #999; font-size: 10px;}
-.adr::before{content: ""; display: inline-block; width: 1px; height: 10px;
-background-color: #a5b2d2; vertical-align: middle; margin: 0 3px;}
+/* address */
+footer address{
+    font-size: 11px;
+    color: #cececf;
+    margin-top: 20px;
+}
+footer address span:not(:last-of-type)::after{
+    content: "|";
+    padding: 0 4px;
+}
+footer address span a{
+    color: #000;
+    text-decoration: underline;
+}
+footer .br{
+    display: inline-block;
+    padding-top: 5px;
+}
