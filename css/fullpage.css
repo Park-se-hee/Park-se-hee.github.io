@@ -898,3 +898,51 @@
 #section6 div a:hover{
     color: #87EEE1;
 }
+
+/* moblie */
+video{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.mobile{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.mobile div{
+    display: none;
+    width: 100%;
+    height: auto;
+}
+.mobile div div{
+    display: none;
+    font-family: 'SUIT';
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    margin: 5px 0;
+}
+@media screen and (max-width: 1200px) {
+    video{
+        display: block;
+    }
+    .mobile{
+        display: flex;
+        align-items: center;
+    }
+    .mobile div{
+        display: block;
+    }
+    .mobile div div{
+        display: block;
+    }
+}
