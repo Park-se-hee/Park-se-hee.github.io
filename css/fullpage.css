@@ -432,7 +432,7 @@
     top: 1%;
 }
 #section1 div .resume{
-    width: 980px;
+    width: 970px;
     height: 530px;
     display: flex;
     flex-wrap: wrap;
@@ -453,7 +453,7 @@
     font-weight: 300;
 }
 #section1 div .resume > li:nth-child(2){
-    width: 540px;
+    width: 530px;
     height: 187px;
 }
 #section1 div .resume > li:nth-child(2) ul li{
