@@ -432,7 +432,7 @@
     top: 1%;
 }
 #section1 div .resume{
-    width: 970px;
+    width: 980px;
     height: 530px;
     display: flex;
     flex-wrap: wrap;
@@ -453,7 +453,7 @@
     font-weight: 300;
 }
 #section1 div .resume > li:nth-child(2){
-    width: 530px;
+    width: 540px;
     height: 187px;
 }
 #section1 div .resume > li:nth-child(2) ul li{
@@ -470,6 +470,7 @@
     color: #fff;
     border-radius: 30px;
     margin: 0 10px 5px 0;
+    font-weight: 500;
 }
 #section1 div .resume > li > ul{
     font-size: 16px;
