@@ -413,7 +413,7 @@
 
 /* section1 */
 #section1 li{
-    font-family: 'SUIT-Regular';
+    font-family: 'SUIT', sans-serif;
     color: #2e2e2e;
 }
 #section1 > div{
@@ -539,6 +539,7 @@
     margin: 50px auto 0;
 }
 #section2 .content > li:first-child{
+    font-family: 'SUIT', sans-serif;
     font-size: 120px;
     font-weight: 900;
     color: #F5F5F5;
@@ -547,10 +548,9 @@
 }
 #section2 .content > li:last-child{
     padding-top: 30px;
-    font-family: 'SUIT', sans-serif;
-    font-weight: 900;
 }
 #section2 .content > li:last-child ul li{
+    font-family: 'SUIT', sans-serif;
     font-size: 24px;
     font-weight: 200;
     color: #2e2e2e;
@@ -602,7 +602,6 @@
 }
 #section3 div ul li{
     color: #2e2e2e;
-    font-family: 'SUIT', sans-serif;
 }
 #section3 div > ul:first-child > li:first-child{
     font-family: 'SUIT', sans-serif;
@@ -625,7 +624,7 @@
 #section3 div > ul:first-child > li:nth-child(3) ul li{
     font-family: 'SUIT', sans-serif;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 600;
     margin: 5px 0;
 }
 #section3 div > ul:first-child > li:nth-child(4) ul{
@@ -639,7 +638,7 @@
     border-radius: 100px;
     font-family: 'SUIT', sans-serif;
     font-size: 20px;
-    font-weight: 200;
+    font-weight: 300;
     box-shadow: rgba(0, 0, 0, 0.25) 3px 3px 4px inset;
 }
 #section3 div > ul:first-child > li:nth-child(4) ul li:hover{
