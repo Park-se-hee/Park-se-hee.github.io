@@ -1,5 +1,5 @@
 @import url(reset.css);
-@font-face {
+/* @font-face {
     font-family: 'SUIT-Regular';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
     font-weight: normal;
@@ -12,6 +12,12 @@
 @font-face {
     font-family: 'Nikea-4BVjK';
     src: url('../images/nikea-cdnfonts/Nikea-4BVjK.otf') format('otf');
+} */
+@font-face{
+    font-family: 'SUIT-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /*!
@@ -24,6 +30,7 @@
  *
  * Copyright (C) 2021 http://alvarotrigo.com/fullPage - A project by Alvaro Trigo
  */
+
  html.fp-enabled,
  .fp-enabled body {
      margin: 0;
@@ -352,7 +359,7 @@
 }
 #section0 p,
 #section0 nav ul li a{
-    font-family: 'Nikea';
+    font-family: 'NIKEA', sans-serif;
     font-size: 18px;
     color: #fff;
 }
