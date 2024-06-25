@@ -6,13 +6,18 @@
     font-style: normal;
 }
 @font-face {
-    font-family: 'Roboto';
-    src: url('../images/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-family: 'Roboto-Regular';
+    src: url('../images/Roboto/Roboto-Regular.ttf') format('ttf');
 }
 @font-face {
-    font-family: 'Nikea';
-    src: url('../images/nikea-cdnfonts/Nikea-4BVjK.otf') format('truetype');
+    font-family: 'Nikea-4BVjK';
+    src: url('../images/nikea-cdnfonts/Nikea-4BVjK.otf') format('otf');
 }
+@font-face {
+    font-family: 'NotoSansKR-VariableFont_wght';
+    src: url('../images/Noto_Sans_KR/NotoSansKR-VariableFont_wght.ttf') format('ttf');
+}
+
 /*!
  * fullPage 4.0.20
  * https://github.com/alvarotrigo/fullPage.js
@@ -351,7 +356,7 @@
 }
 #section0 p,
 #section0 nav ul li a{
-    font-family: 'nikea';
+    font-family: 'Nikea';
     font-size: 18px;
     color: #fff;
 }
@@ -425,7 +430,7 @@
 
 /* section1 */
 #section1 li{
-    font-family: 'SUIT';
+    font-family: 'SUIT-Regular';
     color: #2e2e2e;
 }
 #section1 > div{
@@ -441,8 +446,6 @@
     top: 1%;
 }
 #section1 div .resume{
-    width: 970px;
-    height: 530px;
     display: flex;
     flex-wrap: wrap;
     margin: 150px 0 0 370px;
@@ -482,7 +485,7 @@
 }
 #section1 div .resume > li:first-child,
 #section1 div .resume > li:nth-child(2){
-    margin-bottom: 10px;
+    margin-bottom: 50px;
 }
 .license > ul,
 .skills > ul{
@@ -501,7 +504,6 @@
 }
 .skills{
     width: 397px;
-    /* height: 282px; */
     margin-left: 57px;
 }
 .skills > ul li:first-child{
@@ -608,7 +610,6 @@
 #section3 div{
     width: 100%;
     height: 100%;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -640,8 +641,7 @@
 #section3 div > ul:first-child > li:nth-child(4) ul{
     display: flex;
     flex-wrap: wrap;
-    width: 562px;
-    height: 120px;
+    width: 650px;
 }
 #section3 div > ul:first-child > li:nth-child(4) ul li{
     padding: 15px 25px;
