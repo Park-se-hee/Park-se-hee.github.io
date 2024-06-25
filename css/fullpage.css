@@ -600,10 +600,12 @@
     font-family: 'SUIT';
 }
 #section3 div{
-    width: 1420px;
-    height: 600px;
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #section3 div ul li{
     color: #2e2e2e;
