@@ -1,18 +1,4 @@
 @import url(reset.css);
-/* @font-face {
-    font-family: 'SUIT-Regular';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Roboto-Regular';
-    src: url('../images/Roboto/Roboto-Regular.ttf') format('ttf');
-}
-@font-face {
-    font-family: 'Nikea-4BVjK';
-    src: url('../images/nikea-cdnfonts/Nikea-4BVjK.otf') format('otf');
-} */
 @font-face{
     font-family: 'SUIT-Regular';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
@@ -685,6 +671,8 @@
 
 /* section4 */
 #section4{
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 400;
     background-image: url(../images/bg1.png);
 }
 #section4 > div:first-child img{
@@ -715,7 +703,7 @@
 }
 #section4 > div:last-child > div ul li:first-child{
     font-size: 24px;
-    font-weight: 900;
+    font-weight: 800;
     color: #0B85C7;
 }
 #section4 > div:last-child > div ul li span{
@@ -749,7 +737,7 @@
     margin: 20px 0 15px;
 }
 #section4 > div:last-child > div ul:nth-of-type(2) b{
-    font-weight: 900;
+    font-weight: 600;
     margin-right: 17px;
 }
 #section4 > div:last-child > div ul:nth-of-type(2) li:last-child b{
@@ -777,6 +765,8 @@
 
 /* section5 */
 #section5{
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 400;
     background-image: url(../images/bg2.png);
 }
 #section5 > div:first-of-type img{
@@ -825,7 +815,7 @@
 }
 #section5 > div:last-child > div ul li:first-child{
     font-size: 24px;
-    font-weight: 900;
+    font-weight: 800;
 }
 #section5 > div:last-child > div ul li span{
     vertical-align: middle;
@@ -857,7 +847,7 @@
     margin: 20px 0 15px;
 }
 #section5 > div:last-child > div ul:nth-of-type(2) b{
-    font-weight: 900;
+    font-weight: 600;
     margin-right: 17px;
 }
 #section5 > div:last-child > div ul:nth-of-type(2) li:last-child b{
@@ -890,6 +880,7 @@
 }
 #section6 div ul li{
     color: #fff;
+    font-family: "Noto Sans KR", sans-serif;
 }
 #section6 div > ul:last-child{
     display: flex;
