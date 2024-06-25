@@ -440,7 +440,7 @@
     margin: 150px 0 0 370px;
 }
 #section1 div .resume > li{
-    font-family: 'SUIT';
+    font-family: 'SUIT', sans-serif;
     font-size: 48px;
     font-weight: 900;
     color: #2e2e2e;
@@ -523,7 +523,7 @@
 
 /* section2 */
 #section2{
-    font-family: 'SUIT';
+    font-family: 'SUIT', sans-serif;
 }
 #section2 > div{
     width: 1500px;
@@ -553,7 +553,8 @@
 }
 #section2 .content > li:last-child{
     padding-top: 30px;
-    font-family: 'SUIT';
+    font-family: 'SUIT', sans-serif;
+    font-weight: 900;
 }
 #section2 .content > li:last-child ul li{
     font-size: 24px;
@@ -596,7 +597,7 @@
 
 /* section3 */
 #section3{
-    font-family: 'SUIT';
+    font-family: 'SUIT', sans-serif;
 }
 #section3 div{
     width: 100%;
@@ -607,9 +608,10 @@
 }
 #section3 div ul li{
     color: #2e2e2e;
-    font-family: 'SUIT';
+    font-family: 'SUIT', sans-serif;
 }
 #section3 div > ul:first-child > li:first-child{
+    font-family: 'SUIT', sans-serif;
     font-size: 100px;
     font-weight: 900;
     background-image: url(../images/Rectangle\ 49.png);
@@ -618,7 +620,7 @@
     padding-bottom: 50px;
 }
 #section3 div > ul:first-child > li:nth-child(2){
-    font-family: 'SUIT';
+    font-family: 'SUIT', sans-serif;
     font-size: 50px;
     font-weight: 800;
 }
@@ -627,7 +629,7 @@
     margin: 30px 120px 40px 0;
 }
 #section3 div > ul:first-child > li:nth-child(3) ul li{
-    font-family: 'SUIT';
+    font-family: 'SUIT', sans-serif;
     font-size: 20px;
     font-weight: 400;
     margin: 5px 0;
@@ -641,7 +643,7 @@
     padding: 15px 25px;
     background-color: #fff;
     border-radius: 100px;
-    font-family: 'SUIT';
+    font-family: 'SUIT', sans-serif;
     font-size: 20px;
     font-weight: 200;
     box-shadow: rgba(0, 0, 0, 0.25) 3px 3px 4px inset;
