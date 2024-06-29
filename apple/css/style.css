@@ -26,7 +26,11 @@ header{
 .gnb{
     width: 100%;
 }
-.gnb > ul, .wrapper > ul:last-child{display: flex; justify-content: space-around;}
+.gnb > ul,
+.wrapper > ul:last-child{
+    display: flex;
+    justify-content: space-around;
+}
 .wrapper > ul:last-child{
     width: 90px;
     justify-content: space-between;
@@ -54,10 +58,9 @@ header{
     background-color: rgb(245, 245, 248,1);
 }
 .gnb > ul > li > ul > li{
-    position: relative;
-    left: 24%;
     padding: 40px 0 50px;
     color: gray;
+    margin-left: 24%;
 }
 .gnb > ul > li > ul > li a{
     font-size: 20px;
@@ -80,9 +83,12 @@ header{
 /* main */
 main{width: 100%; padding-top: 44px;}
 main > div p{
-    height: 54px; line-height: 54px;
+    width: 100%;
+    height: 54px;
+    line-height: 54px;
     background-color: #fff;
     text-align: center;
+    text-wrap: nowrap;
     font-size: 12px;
 }
 main > div p a{
@@ -190,7 +196,7 @@ main > div p a{
     width: 49%;
     height: 580px;
     margin: 0 6px 12px;
-}
+}   
 .content div:first-child{
     background-image: url(../images/promo_wwdc24_announce__fv0p5miwnjiq_large.jpg);
 }
@@ -327,6 +333,7 @@ main > div p a{
 .slide{
     width: 100%;
     margin-bottom: 38px;
+    z-index: -1;
 }
 .slide div{
     padding: 0 7px;
@@ -485,4 +492,15 @@ footer address span a{
 footer .br{
     display: inline-block;
     padding-top: 5px;
+}
+
+@media screen and (max-width: 1215px) {
+    .content div{
+        width: 48%;
+    }   
+}
+@media screen and (max-width: 616px) {
+    .content div{
+        width: 100%;
+    }   
 }
