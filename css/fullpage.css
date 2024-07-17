@@ -948,6 +948,7 @@ video{
     }
     #section1 .text_bottom p{
         color: #2e2e2e;
+        font-size: 16px;
         margin-bottom: 5px;
     }
     #section1 .profile{
@@ -1085,7 +1086,7 @@ video{
         display: block;
     }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 390px) {
     #section0{
         background-image: url(../images/Group\ 83.jpg);
     }
