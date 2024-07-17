@@ -942,14 +942,13 @@ video{
     }
     #section1 .text_bottom{
         font-family: 'SUIT', sans-serif;
-        font-size: 16px;
         font-weight: 500;
         margin-top: 30px;
     }
     #section1 .text_bottom p{
         color: #2e2e2e;
-        font-size: 16px;
         margin-bottom: 5px;
+        font-size: 16px;
     }
     #section1 .profile{
         display: flex;
@@ -1093,7 +1092,7 @@ video{
     #section0 p{
         width: 350px;
         position: relative;
-        top: 56%;
+        top: 55%;
         font-size: 20px;
     }
 }
