@@ -1090,9 +1090,21 @@ video{
     #section0{
         background-image: url(../images/Group\ 83.jpg);
     }
+    #section0 p{
+        width: 350px;
+        position: relative;
+        top: 56%;
+        font-size: 20px;
+    }
 }
 @media screen and (max-width: 375px) {
     #section0{
         background-image: url(../images/Group\ 83.jpg);
+    }
+    #section0 p{
+        width: 350px;
+        position: relative;
+        top: 56%;
+        font-size: 20px;
     }
 }
