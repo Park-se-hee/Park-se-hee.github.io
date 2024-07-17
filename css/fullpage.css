@@ -1085,6 +1085,11 @@ video{
         display: block;
     }
 }
+@media screen and (max-width: 400px) {
+    #section0{
+        background-image: url(../images/Group\ 83.jpg);
+    }
+}
 @media screen and (max-width: 375px) {
     #section0{
         background-image: url(../images/Group\ 83.jpg);
