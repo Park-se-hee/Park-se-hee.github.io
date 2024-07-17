@@ -449,6 +449,9 @@ html.fp-enabled,
     background-size: cover;
     background-repeat: no-repeat;
 }
+#section4 .text2{
+    display: none;
+}
 #section4 > div:first-child img{
     transform: rotate(30deg);
     position: absolute;
@@ -565,6 +568,9 @@ html.fp-enabled,
     background-image: url(../images/bg2.png);
     background-size: cover;
     background-repeat: no-repeat;
+}
+#section5 .text2{
+    display: none;
 }
 #section5 > div:first-of-type img{
     width: 122vmin;
@@ -895,7 +901,7 @@ video{
         width: 100%;
     }
     #section3 div > ul:first-child > li:nth-child(4) ul li{
-        padding: 15px 25px;
+        padding: 12px 22px;
         font-size: 3vmin;
     }
     #section3 div > ul:first-child > li:nth-child(4) ul li:not(:first-child){
@@ -905,23 +911,16 @@ video{
         margin-bottom: 10px;
     }
     #section3 div > ul:first-child > li:nth-child(4) ul li:nth-child(4){
-        margin-left: 0 0 0 10px;
+        margin-left: 0;
     }
 }
 
 @media screen and (max-width: 1200px) {
 }
 @media screen and (max-width: 1100px) {
-    /* #section0{
-        width: 100%;
-        height: 100%;
-        text-align: center;
+    #section0{
         background-image: url(../images/ipad_bg.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        display: flex;
-        justify-content: center;
-    } */
+    }
 }
 @media screen and (max-width: 960px) {
     #section1{
@@ -930,7 +929,6 @@ video{
     #section1 .text_top,
     #section1 .text_bottom{
         display: block;
-        font-size: 24px;
         font-weight: 900;
         color: #222;
     }
@@ -1008,6 +1006,9 @@ video{
         color: #2e2e2e;
         margin-bottom: 5px;
     }
+    #section0{
+        background-image: url(../images/ip_bg.jpg);
+    }
 }
 @media screen and (max-width: 720px) {
     #section3 div > ul:first-child > li:first-child{
@@ -1060,7 +1061,7 @@ video{
     #section0 p{
         width: 350px;
         position: relative;
-        top: 57%;
+        top: 60%;
         font-size: 20px;
     }
     #section1 .profile img{
@@ -1070,5 +1071,17 @@ video{
     #section3 div > ul:first-child > li:first-child{
         width: 90%;
         background-position: 0 50%;
+    }
+    #section4 .text1{
+        display: none;
+    }
+    #section4 .text2{
+        display: block;
+    }
+    #section5 .text1{
+        display: none;
+    }
+    #section5 .text2{
+        display: block;
     }
 }
