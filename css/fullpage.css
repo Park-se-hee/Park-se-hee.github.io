@@ -916,13 +916,13 @@ video{
 }
 
 @media screen and (max-width: 1200px) {
+    #section2 .content{
+        margin: auto;
+    }
 }
 @media screen and (max-width: 1100px) {
     #section0{
         background-image: url(../images/ipad_bg.jpg);
-    }
-    #section2 .content{
-        margin: auto;
     }
 }
 @media screen and (max-width: 960px) {
