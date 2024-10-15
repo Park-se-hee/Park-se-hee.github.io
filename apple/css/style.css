@@ -1,5 +1,6 @@
 @import url(reset.css);
 html{
+    max-width: 100%;
     overflow-x: hidden;
 }
 /* header */
