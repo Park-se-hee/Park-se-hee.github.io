@@ -917,7 +917,7 @@ video{
 
 @media screen and (max-width: 1200px) {
     #section2 .content{
-        margin: auto;
+        margin: -10px auto 0;
     }
     #section2 .design{
         margin: 30px auto 0;
