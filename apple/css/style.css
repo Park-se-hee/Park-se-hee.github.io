@@ -1,7 +1,7 @@
 @import url(reset.css);
 html{
-    max-width: 100%;
-    overflow-x: hidden;
+    width: 100%;
+    overflow: hidden;
     box-sizing: border-box;
 }
 /* header */
