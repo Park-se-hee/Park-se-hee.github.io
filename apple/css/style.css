@@ -509,7 +509,7 @@ footer .br{
     padding-top: 5px;
 }
 
-@media screen and (max-width: 1215px) {
+/* @media screen and (max-width: 1215px) {
     .content div{
         width: 48%;
     }   
@@ -518,4 +518,4 @@ footer .br{
     .content div{
         width: 100%;
     }   
-}
+} */
