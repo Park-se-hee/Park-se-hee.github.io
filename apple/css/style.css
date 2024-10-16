@@ -1,8 +1,7 @@
 @import url(reset.css);
-html{
-    width: 100%;
+html,body{
+    width: 1920px;
     overflow-x: hidden;
-    overflow-y: scroll;
     box-sizing: border-box;
 }
 /* header */
