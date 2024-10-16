@@ -2,6 +2,7 @@
 html{
     width: 100%;
     overflow: hidden;
+    overflow-y: scroll;
     box-sizing: border-box;
 }
 /* header */
