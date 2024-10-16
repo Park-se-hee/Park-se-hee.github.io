@@ -1,6 +1,6 @@
 @import url(reset.css);
 html,body{
-    width: 1920px;
+    max-width: 1920px;
     overflow-x: hidden;
     box-sizing: border-box;
 }
